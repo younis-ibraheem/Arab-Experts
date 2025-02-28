@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="signin.css" />
+
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Arab Experts</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Sign Up</h2>
+       <form id="signup-form" action="#" onsubmit="return validateForm()">
+    <div class="form-group">
+        <label for="First">First Name</label>
+        <input id="First" type="text" required minlength="2" maxlength="30" />
+    </div>
+
+    <div class="form-group">
+        <label for="Last">Last Name</label>
+        <input id="Last" type="text" required minlength="2" maxlength="30" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" required minlength="6" />
+    </div>
+
+    <div class="form-group">
+        <label for="Number">Phone Number</label>
+        <input id="Number" type="text" required pattern="^[0-9]{10,15}$" title="Enter a valid phone number (10-15 digits)" />
+    </div>
+
+    <div class="form-group">
+        <label for="Country">Country of Residence</label>
+        <select id="Country" required>
+            <option value="">Select a country</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Education">Education Level</label>
+        <select id="Education" required>
+            <option value="">Select your education</option>
+            <option value="high-school">High School</option>
+            <option value="bachelor">Bachelor's</option>
+            <option value="master">Master's</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Specialization">Specialization</label>
+        <input id="Specialization" type="text" required />
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" id="updates" />
+        <label for="updates">Receive email updates</label>
+    </div>
+
+    <button type="submit" class="btn">SIGN UP</button>
+</form>
+        <p>By signing up you agree to our</p>
+      </div>
+      <div class="logo">
+        <img src="css/img/logo.png" alt="Arab Experts Logo" />
+      </div>
+    </div>
+  </body>
+</html>
+<!--SIGN UP-->
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    window.location.href = "index.html";
+  });
+</script>

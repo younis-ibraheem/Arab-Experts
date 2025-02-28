@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.hero-section {
+  position: relative;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+}
+.hero-section .background {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background: url("css/img/main.png") no-repeat bottom center/cover;
+}
+.hero-section .logo {
+  position: absolute;
+  top: -10%;
+  left: -2%;
+  width: 365px;
+  height: 365px;
+}
+@media (max-width: 1024px) {
+  .hero-section .logo {
+    top: -5%;
+    left: -2%;
+  }
+}
+.hero-content img {
+  width: 100%;
+  height: 100vh;
+}
+
+.oval-shape {
+  position: absolute;
+  top: 48%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 30px;
+
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.oval-shape h1 {
+  font-family: "Raleway";
+  font-size: 48px;
+  font-weight: bold;
+
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.oval-shape p {
+  width: 60%;
+  margin: 20px auto;
+
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.oval-shape .logo {
+  width: 365px;
+  height: 365px;
+  margin-top: 10px;
+  position: absolute;
+  left: -15%;
+  top: 0;
+}
+@media (max-width: 1024px) {
+  .oval-shape .logo {
+    display: none;
+  }
+  .oval-shape h1 {
+    font-size: 20px;
+  }
+
+  .oval-shape p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .oval-shape .logo {
+    width: 265px;
+    height: 265px;
+    margin-top: 10px;
+    position: absolute;
+
+    top: 20%;
+  }
+  .oval-shape h1 {
+    font-size: 35px;
+  }
+
+  .oval-shape p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .oval-shape .logo {
+    width: 365px;
+    height: 365px;
+    margin-top: 10px;
+    position: absolute;
+
+    top: -20%;
+  }
+}
+@media (max-width: 768px) {
+  .oval-shape {
+    left: 50%;
+    width: 80%;
+  }
+
+  .oval-shape p {
+    width: 80%;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+/*  ....................................Account-section ..................................................*/
+
+.account-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #025bb49f;
+  color: white;
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+}
+.account-section img:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+}
+.account-section img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+}
+.account-section h2 {
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 60px;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.account-section p {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.account-section input {
+  width: 403px;
+  height: 58px;
+  border: none;
+
+  border-radius: 25px;
+}
+
+.register-btn {
+  background: #e8bf3b;
+  color: #002077;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 25px;
+  position: absolute;
+  width: 239.4px;
+  height: 66%;
+  font-weight: bold;
+  right: -15%;
+  font-family: "Lemonada";
+  text-align: center;
+  align-items: center;
+}
+.register-btn i {
+  position: absolute;
+  right: 20px;
+  top: 25%;
+}
+
+/*  ....................................footer-section ..................................................*/
+
+.footer {
+  background-color: #002077;
+  color: white;
+
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .footer-content img {
+  width: 365px;
+  height: 365px;
+}
+.footer p {
+  text-align: start;
+  margin: 0 10%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(css/img/footer.png);
+
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  filter: opacity(0.2);
+  opacity: 0.7;
+  top: -50%;
+  right: 0;
+}
+.office {
+  margin: 10px;
+}
+.copyright {
+  margin-top: 20px;
+}
+
+.footer-content .office h3 {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.footer-content .office p {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 40px;
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.footer .contact {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .contact .icons i {
+  color: #03a9f5;
+  margin: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer .contact {
+    flex-direction: column;
+  }
+  .footer-content::after {
+    height: 150%;
+  }
+
+  .register-btn {
+    font-size: 15px;
+    height: 50%;
+    width: 40%;
+    right: -10%;
+  }
+
+  .account-section input {
+    width: 260px;
+    height: 35px;
+    border: none;
+
+    border-radius: 25px;
+  }
+}
